@@ -1,0 +1,122 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CAT2	src/hash_table.h	51;"	d
+CAT2	src/tree.h	51;"	d
+CAT3	src/hash_table.h	54;"	d
+CAT3	src/tree.h	54;"	d
+CAT4	src/hash_table.h	57;"	d
+CAT4	src/tree.h	57;"	d
+DEFAULT_START_SIZE_IDX	src/hash_table.h	69;"	d
+KEY_ADDR	src/accesses.c	26;"	d	file:
+KEY_BYTES	src/accesses.c	25;"	d	file:
+MIN	src/accesses.c	21;"	d	file:
+PAGE_SIZE	src/accesses.c	77;"	d	file:
+PROC_OBJECT_MAP_IMPL	src/accesses.c	18;"	d	file:
+STR	src/hash_table.h	48;"	d
+STR	src/tree.h	48;"	d
+_CAT2	src/hash_table.h	52;"	d
+_CAT2	src/tree.h	52;"	d
+_CAT3	src/hash_table.h	55;"	d
+_CAT3	src/tree.h	55;"	d
+_CAT4	src/hash_table.h	58;"	d
+_CAT4	src/tree.h	58;"	d
+_HASH_TABLE_EQU	src/hash_table.h	66;"	d
+_HASH_TABLE_H_	src/hash_table.h	11;"	d
+_STR	src/hash_table.h	49;"	d
+_STR	src/tree.h	49;"	d
+_TI_FROM_TN	src/tree.h	79;"	d
+_TN_IS_RED	src/tree.h	77;"	d
+_TREE_CMP	src/tree.h	68;"	d
+_TREE_EQU	src/tree.h	72;"	d
+_TREE_H_	src/tree.h	12;"	d
+_TREE_LEQ	src/tree.h	74;"	d
+_TREE_LSS	src/tree.h	70;"	d
+_hash_table	src/hash_table.h	62;"	d
+_hash_table_slot	src/hash_table.h	60;"	d
+_tree	src/tree.h	64;"	d
+_tree_it	src/tree.h	62;"	d
+_tree_node	src/tree.h	60;"	d
+accesses	src/accesses.c	/^    u64 accesses;$/;"	m	struct:__anon2	file:
+addr	src/accesses.c	/^    u64 addr;$/;"	m	struct:__anon5	file:
+addr_OR_coop_buff_bytes	src/accesses.c	/^    void *addr_OR_coop_buff_bytes; \/* malloc()ed when coop bytes *\/$/;"	m	struct:__anon1	file:
+counter_t	src/accesses.c	/^} counter_t;$/;"	t	typeref:struct:__anon2	file:
+cpu_profiler_t	src/accesses.c	/^} cpu_profiler_t;$/;"	t	typeref:struct:__anon4	file:
+cpu_profilers	src/accesses.c	/^cpu_profiler_t cpu_profilers[2048];$/;"	v
+do_args	src/accesses.c	/^int do_args(int argc, char **argv) {$/;"	f
+do_loop	src/accesses.c	/^int do_loop(void) {$/;"	f
+end	src/accesses.c	/^    u64       end;$/;"	m	struct:__anon3	file:
+fd	src/accesses.c	/^    int                          fd;$/;"	m	struct:__anon4	file:
+get_accesses	src/accesses.c	/^void get_accesses(void) {$/;"	f
+get_accesses_for_cpu	src/accesses.c	/^void get_accesses_for_cpu(cpu_profiler_t *cpu_profiler) {$/;"	f
+get_objects	src/accesses.c	/^void get_objects(DIR *dir, char *objmap_path) {$/;"	f
+hash	src/accesses.c	/^u64 hash(const lookup_t l) { \/* Use const so that the compiler will hopefully pass by ref. *\/$/;"	f
+hash_addr	src/accesses.c	/^u64 hash_addr(void *addr) { return (u64)addr; }$/;"	f
+hash_bytes	src/accesses.c	/^u64 hash_bytes(char *bytes, u32 n_bytes) {$/;"	f
+hash_table	src/hash_table.h	63;"	d
+hash_table_delete	src/hash_table.h	24;"	d
+hash_table_free	src/hash_table.h	20;"	d
+hash_table_get_key	src/hash_table.h	21;"	d
+hash_table_get_val	src/hash_table.h	22;"	d
+hash_table_insert	src/hash_table.h	23;"	d
+hash_table_len	src/hash_table.h	19;"	d
+hash_table_make	src/hash_table.h	17;"	d
+hash_table_make_e	src/hash_table.h	18;"	d
+hash_table_pretty_name	src/hash_table.h	64;"	d
+hash_table_slot	src/hash_table.h	61;"	d
+hash_table_traverse	src/hash_table.h	25;"	d
+ht_prime_sizes	src/hash_table.h	/^static uint64_t ht_prime_sizes[] = {$/;"	v
+i_ms	src/accesses.c	/^int                             i_ms;$/;"	v
+kind	src/accesses.c	/^    int   kind;$/;"	m	struct:__anon1	file:
+look	src/accesses.c	/^    lookup_t *look;$/;"	m	struct:__anon3	file:
+lookup_t	src/accesses.c	/^} lookup_t;$/;"	t	typeref:struct:__anon1	file:
+main	src/accesses.c	/^int main(int argc, char **argv) {$/;"	f
+measure_time_now_ms	src/accesses.c	/^u64 measure_time_now_ms(void) {$/;"	f
+metadata	src/accesses.c	/^    struct perf_event_mmap_page *metadata;$/;"	m	struct:__anon4	typeref:struct:__anon4::perf_event_mmap_page	file:
+n_coop_buff_bytes	src/accesses.c	/^    u32   n_coop_buff_bytes;$/;"	m	struct:__anon1	file:
+n_cpus	src/accesses.c	/^int            n_cpus;$/;"	v
+object_t	src/accesses.c	/^} object_t;$/;"	t	typeref:struct:__anon3	file:
+pe	src/accesses.c	/^    struct perf_event_attr       pe;$/;"	m	struct:__anon4	typeref:struct:__anon4::perf_event_attr	file:
+pid	src/accesses.c	/^    u32 pid;$/;"	m	struct:__anon5	file:
+pid	src/accesses.c	/^int                             pid;$/;"	v
+profile_get_event	src/accesses.c	/^int profile_get_event(int cpu, cpu_profiler_t *cpu_profiler) {$/;"	f
+profile_max_sample_pages	src/accesses.c	/^int         profile_max_sample_pages = 128;$/;"	v
+profile_overflow_thresh	src/accesses.c	/^int         profile_overflow_thresh  = 4;$/;"	v
+profile_sample_t	src/accesses.c	/^} profile_sample_t;$/;"	t	typeref:struct:__anon5	file:
+report_interval	src/accesses.c	/^void report_interval(int i, u64 elap_ms) {$/;"	f
+rss	src/accesses.c	/^    u64 rss;$/;"	m	struct:__anon2	file:
+setup_profiling	src/accesses.c	/^int setup_profiling(void) {$/;"	f
+size	src/accesses.c	/^    size_t                       size;$/;"	m	struct:__anon4	file:
+str	src/accesses.c	/^typedef char *str;$/;"	t	file:
+tid	src/accesses.c	/^    u32 tid;$/;"	m	struct:__anon5	file:
+tree	src/tree.h	65;"	d
+tree_begin	src/tree.h	25;"	d
+tree_delete	src/tree.h	24;"	d
+tree_free	src/tree.h	21;"	d
+tree_geq	src/tree.h	27;"	d
+tree_gtr	src/tree.h	28;"	d
+tree_insert	src/tree.h	23;"	d
+tree_it	src/tree.h	63;"	d
+tree_it_equ	src/tree.h	41;"	d
+tree_it_good	src/tree.h	33;"	d
+tree_it_key	src/tree.h	30;"	d
+tree_it_next	src/tree.h	32;"	d
+tree_it_prev	src/tree.h	34;"	d
+tree_it_val	src/tree.h	31;"	d
+tree_last	src/tree.h	26;"	d
+tree_len	src/tree.h	20;"	d
+tree_lookup	src/tree.h	22;"	d
+tree_make	src/tree.h	18;"	d
+tree_make_c	src/tree.h	19;"	d
+tree_node	src/tree.h	61;"	d
+tree_pretty_name	src/tree.h	66;"	d
+tree_rtraverse	src/tree.h	45;"	d
+tree_traverse	src/tree.h	43;"	d
+u32	src/accesses.c	13;"	d	file:
+u64	src/accesses.c	14;"	d	file:
+usage	src/accesses.c	/^void usage(char *argv0) {$/;"	f
+use_hash_table	src/hash_table.h	136;"	d
+use_tree	src/tree.h	85;"	d

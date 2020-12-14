@@ -1,0 +1,4 @@
+set builder-build-command           './build.sh'
+set use-ctags                       'yes'
+set ctags-flags                     '-R src'
+set ctags-enable-extra-highlighting 'yes'
