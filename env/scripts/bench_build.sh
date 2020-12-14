@@ -43,8 +43,8 @@ export C_COMPILER="clang"
 export LLVMLINK="llvm-link"
 export LLVMOPT="opt"
 
-# export COMPILER_WRAPPER="${LD_LINKER} -I${HMALLOC_ENV_DIR}/include"
-# export LD_WRAPPER="${LD_LINKER} -L${HMALLOC_ENV_DIR}/lib -lhmalloc "
+# export COMPILER_WRAPPER="${LD_LINKER} -I${OBJMAP_ENV_DIR}/include"
+# export LD_WRAPPER="${LD_LINKER} -L${OBJMAP_ENV_DIR}/lib -lhmalloc "
 # export PREPROCESS_WRAPPER="${LD_LINKER} -E -x c -P"
 # export AR_WRAPPER="ar"
 # export RANLIB_WRAPPER="ranlib"
@@ -54,7 +54,7 @@ export LLVMOPT="opt"
 # mv exe control
 
 # Make sure the Makefiles find our wrappers
-export COMPILER_WRAPPER="compiler_wrapper.sh -I${HMALLOC_ENV_DIR}/include"
+export COMPILER_WRAPPER="compiler_wrapper.sh -I${OBJMAP_ENV_DIR}/include"
 export LD_WRAPPER="ld_wrapper.sh "
 export PREPROCESS_WRAPPER="clang -E -x c -P"
 export AR_WRAPPER="ar_wrapper.sh"
