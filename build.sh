@@ -2,8 +2,8 @@
 
 build_llvm="yes"
 build_flang_driver="yes"
-build_openmp="yes"
 build_libpgmath="yes"
+build_openmp="yes"
 build_flang="yes"
 build_hmalloc="yes"
 build_compass="yes"
@@ -143,6 +143,13 @@ fi
 
 ### Build libpgmath ###
 if ! [ -z "$build_libpgmath" ]; then
+    if ! [ -d "flang" ]; then
+        git clone https://github.com/kammerdienerb/flang
+    else
+        (cd "flang"; git pull)
+    fi
+
+    (cd "flang"; git checkout release_70)
     cd build
     rm -rf *
 
