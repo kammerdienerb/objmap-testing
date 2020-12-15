@@ -205,6 +205,7 @@ if ! [ -z "$build_hmalloc" ]; then
     make clean
     make -j${ncores} || exit 1
     cp lib/libhmalloc.so ${install_dir}/lib
+    cp src/proc_object_map.h ${install_dir}/include
 
     cd ${script_dir}
 fi
