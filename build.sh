@@ -186,8 +186,15 @@ fi
 
 ### Build hmalloc ###
 if ! [ -z "$build_hmalloc" ]; then
-    cd hmalloc
+    if ! [ -d "hmalloc" ]; then
+        git clone https://github.com/kammerdienerb/hmalloc
+    else
+        (cd "hmalloc"; git pull)
+    fi
 
+    (cd "hmalloc"; git checkout objmap)
+
+    cd hmalloc
     make clean
     make -j${ncores} || exit 1
     cp lib/libhmalloc.so ${install_dir}/lib
