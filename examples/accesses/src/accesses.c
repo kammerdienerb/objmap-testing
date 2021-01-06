@@ -19,6 +19,7 @@
 #include "proc_object_map.h"
 
 #define MIN(x, y) ((x) < (y) ? (x) : (y))
+#define MAX(x, y) ((x) > (y) ? (x) : (y))
 
 typedef char *str;
 
@@ -74,8 +75,11 @@ int                             i_ms;
 hash_table(lookup_t, counter_t) counters;
 tree(u64, object_t)             addr_tree;
 
+
+const char *profile_event = "MEM_LOAD_UOPS_RETIRED.L3_MISS";
+
 #define PAGE_SIZE (4096)
-int         profile_overflow_thresh  = 4;
+int         profile_overflow_thresh  = 16;
 int         profile_max_sample_pages = 128;
 
 typedef struct {
@@ -83,10 +87,12 @@ typedef struct {
     size_t                       size;
     struct perf_event_attr       pe;
     struct perf_event_mmap_page *metadata;
+    pfm_perf_encode_arg_t        pfm;
 } cpu_profiler_t;
 
 int            n_cpus;
 cpu_profiler_t cpu_profilers[2048];
+
 
 typedef struct __attribute__ ((__packed__)) {
     u32 pid;
@@ -146,10 +152,22 @@ u64 measure_time_now_ms(void) {
 }
 
 int profile_get_event(int cpu, cpu_profiler_t *cpu_profiler) {
+    int                   err;
+
+    pfm_initialize();
+
+    cpu_profilers[cpu].pe.size  = sizeof(struct perf_event_attr);
+
+    cpu_profilers[cpu].pfm.size = sizeof(pfm_perf_encode_arg_t);
+    cpu_profilers[cpu].pfm.attr = &cpu_profilers[cpu].pe;
+    err = pfm_get_os_event_encoding(profile_event, PFM_PLM2 | PFM_PLM3, PFM_OS_PERF_EVENT, &cpu_profilers[cpu].pfm);
+
+    if (err != PFM_SUCCESS) {
+        fprintf(stderr, "Couldn't find an appropriate event to use. (error %d) Aborting.\n", err);
+        return 0;
+    }
+
     /* perf_event_open */
-    cpu_profilers[cpu].pe.size           = sizeof(struct perf_event_attr);
-    cpu_profilers[cpu].pe.type           = PERF_TYPE_HARDWARE;
-    cpu_profilers[cpu].pe.config         = PERF_COUNT_HW_CACHE_MISSES;
     cpu_profilers[cpu].pe.sample_type    = PERF_SAMPLE_TID | PERF_SAMPLE_ADDR;
     cpu_profilers[cpu].pe.mmap           = 1;
     cpu_profilers[cpu].pe.exclude_kernel = 1;
@@ -158,7 +176,7 @@ int profile_get_event(int cpu, cpu_profiler_t *cpu_profiler) {
     cpu_profilers[cpu].pe.task           = 1;
     cpu_profilers[cpu].pe.use_clockid    = 1;
     cpu_profilers[cpu].pe.clockid        = CLOCK_MONOTONIC;
-    cpu_profilers[cpu].pe.sample_period  = profile_overflow_thresh;
+    cpu_profilers[cpu].pe.sample_freq    = MAX(1000 / i_ms, 1);
     cpu_profilers[cpu].pe.disabled       = 1;
 
     return 1;
@@ -231,6 +249,8 @@ void get_objects(DIR *dir, char *objmap_path) {
         else if (err == 0)      {
             sscanf(dirent->d_name, "%lx-%lx", (unsigned long*)&obj_start, (unsigned long*)&obj_end);
 
+            coop_bytes = NULL;
+
             if (record.coop_buff_n_bytes > 0) {
                 coop_bytes = malloc(record.coop_buff_n_bytes);
                 err = objmap_entry_read_record_coop_buff(entry_path, coop_bytes, record.coop_buff_n_bytes);
@@ -254,7 +274,7 @@ void get_objects(DIR *dir, char *objmap_path) {
                 val.accesses = 0;
                 hash_table_insert(counters, key, val);
             } else {
-                free(coop_bytes);
+                if (coop_bytes != NULL) { free(coop_bytes); }
                 found_val->rss += record.n_resident_pages * 4096;
             }
 
@@ -267,14 +287,14 @@ void get_objects(DIR *dir, char *objmap_path) {
 }
 
 void get_accesses_for_cpu(cpu_profiler_t *cpu_profiler) {
-    u64                       count;
     u64                       head, tail, buf_size;
     void                     *addr;
     char                     *base, *begin, *end;
     profile_sample_t         *sample;
     struct perf_event_header *header;
-
-    count = 0;
+    tree_it(u64, object_t)    obj_it;
+    object_t                 *obj;
+    counter_t                *accum;
 
     /* Get ready to read */
     head     = cpu_profiler->metadata->data_head;
@@ -288,27 +308,30 @@ void get_accesses_for_cpu(cpu_profiler_t *cpu_profiler) {
 
     /* Read all of the samples */
     while (begin < end) {
-        printf("in loop\n");
         header = (struct perf_event_header *)begin;
         if (header->size == 0) {
-            printf("zero\n");
             break;
         } else if (header->type != PERF_RECORD_SAMPLE) {
-            printf("not sample\n");
             goto inc;
         }
 
-        sample = (profile_sample_t*) (begin + sizeof(struct perf_event_header));
+        sample = (profile_sample_t*) (begin + sizeof(struct perf_event_header)); (void)sample;
 
-        if (sample->pid != pid) {
-            printf("wrong pid\n");
-            goto inc;
-        }
+        if (sample->pid != pid) { goto inc; }
 
         addr = (void *) (sample->addr);
 
-        (void)addr;
-        count += 1;
+        obj_it = tree_gtr(addr_tree, ((u64)addr));
+        tree_it_prev(obj_it);
+
+        if (!tree_it_good(obj_it))   { goto inc; }
+        obj = &(tree_it_val(obj_it));
+        if (((u64)addr) >= obj->end) { goto inc; }
+
+        accum = hash_table_get_val(counters, *obj->look);
+        if (accum == NULL)           { goto inc; }
+
+        accum->accesses += 1;
 inc:
         /* Increment begin by the size of the sample */
         if (((char *)header + header->size) == base + buf_size) {
@@ -317,8 +340,6 @@ inc:
             begin = begin + header->size;
         }
     }
-
-    printf("%lu\n", count);
 
     /* Let perf know that we've read this far */
     cpu_profiler->metadata->data_tail = head;
@@ -334,7 +355,6 @@ void get_accesses(void) {
 }
 
 void report_interval(int i, u64 elap_ms) {
-#if 0
     lookup_t   key;
     counter_t *val_p;
 
@@ -347,7 +367,6 @@ void report_interval(int i, u64 elap_ms) {
         }
         printf("%lu,%lu\n", val_p->rss, val_p->accesses);
     }
-#endif
 }
 
 int do_loop(void) {

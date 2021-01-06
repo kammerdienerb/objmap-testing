@@ -1,0 +1,353 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARRAY_DEFAULT_CAP	src/array.h	9;"	d
+CAT2	src/hash_table.h	51;"	d
+CAT2	src/simple_config.h	387;"	d
+CAT2	src/simple_config.h	915;"	d
+CAT2	src/tree.h	51;"	d
+CAT3	src/hash_table.h	54;"	d
+CAT3	src/simple_config.h	390;"	d
+CAT3	src/simple_config.h	917;"	d
+CAT3	src/tree.h	54;"	d
+CAT4	src/hash_table.h	57;"	d
+CAT4	src/simple_config.h	393;"	d
+CAT4	src/simple_config.h	919;"	d
+CAT4	src/tree.h	57;"	d
+DEFAULT_START_SIZE_IDX	src/hash_table.h	69;"	d
+GET_ENTRY	src/simple_config.h	527;"	d
+GET_ENTRY	src/simple_config.h	931;"	d
+MAX	src/common.h	12;"	d
+MIN	src/common.h	11;"	d
+PAGE_SIZE	src/common.h	27;"	d
+PROCESS_FOR	src/process.h	30;"	d
+RLOCK	src/process.h	22;"	d
+SCFG_ENTRY_HAS_DEFAULT	src/simple_config.h	60;"	d
+SCFG_ENTRY_HAS_DEFAULT	src/simple_config.h	911;"	d
+SCFG_ENTRY_REQUIRED	src/simple_config.h	59;"	d
+SCFG_ENTRY_REQUIRED	src/simple_config.h	910;"	d
+SCFG_ENTRY_SET	src/simple_config.h	61;"	d
+SCFG_ENTRY_SET	src/simple_config.h	912;"	d
+SCFG_ERR_BAD_FILE	src/simple_config.h	13;"	d
+SCFG_ERR_BAD_KEY	src/simple_config.h	15;"	d
+SCFG_ERR_BAD_SYNTAX	src/simple_config.h	14;"	d
+SCFG_ERR_BAD_VAL	src/simple_config.h	16;"	d
+SCFG_ERR_NONE	src/simple_config.h	12;"	d
+SCFG_ERR_VALIDATE	src/simple_config.h	17;"	d
+SCFG_KIND_BOOL	src/simple_config.h	54;"	d
+SCFG_KIND_BOOL	src/simple_config.h	906;"	d
+SCFG_KIND_FLOAT	src/simple_config.h	56;"	d
+SCFG_KIND_FLOAT	src/simple_config.h	908;"	d
+SCFG_KIND_INT	src/simple_config.h	55;"	d
+SCFG_KIND_INT	src/simple_config.h	907;"	d
+SCFG_KIND_STRING	src/simple_config.h	57;"	d
+SCFG_KIND_STRING	src/simple_config.h	909;"	d
+SCFG_SET_ERR	src/simple_config.h	455;"	d
+SCFG_SET_ERR	src/simple_config.h	932;"	d
+SH_PUSH	src/simple_config.h	631;"	d
+SH_PUSH	src/simple_config.h	713;"	d
+SIMPLE_CONFIG_IMPL	src/config.c	3;"	d	file:
+SINT	src/common.h	15;"	d
+STR	src/hash_table.h	48;"	d
+STR	src/simple_config.h	384;"	d
+STR	src/simple_config.h	913;"	d
+STR	src/tree.h	48;"	d
+UINT	src/common.h	14;"	d
+UNLOCK	src/process.h	23;"	d
+UTIL_FN_PRELUDE	src/common.h	29;"	d
+WLOCK	src/process.c	16;"	d	file:
+_CAT2	src/hash_table.h	52;"	d
+_CAT2	src/simple_config.h	388;"	d
+_CAT2	src/simple_config.h	916;"	d
+_CAT2	src/tree.h	52;"	d
+_CAT3	src/hash_table.h	55;"	d
+_CAT3	src/simple_config.h	391;"	d
+_CAT3	src/simple_config.h	918;"	d
+_CAT3	src/tree.h	55;"	d
+_CAT4	src/hash_table.h	58;"	d
+_CAT4	src/simple_config.h	394;"	d
+_CAT4	src/simple_config.h	920;"	d
+_CAT4	src/tree.h	58;"	d
+_HASH_TABLE_EQU	src/hash_table.h	66;"	d
+_HASH_TABLE_H_	src/hash_table.h	11;"	d
+_STR	src/hash_table.h	49;"	d
+_STR	src/simple_config.h	385;"	d
+_STR	src/simple_config.h	914;"	d
+_STR	src/tree.h	49;"	d
+_TI_FROM_TN	src/tree.h	79;"	d
+_TN_IS_RED	src/tree.h	77;"	d
+_TREE_CMP	src/tree.h	68;"	d
+_TREE_EQU	src/tree.h	72;"	d
+_TREE_H_	src/tree.h	12;"	d
+_TREE_LEQ	src/tree.h	74;"	d
+_TREE_LSS	src/tree.h	70;"	d
+__ACTION_H__	src/action.h	2;"	d
+__ARRAY_H__	src/array.h	2;"	d
+__COMMON_H__	src/common.h	2;"	d
+__CONFIG_H__	src/config.h	2;"	d
+__OBJECT_H__	src/object.h	2;"	d
+__PROCESS_H__	src/process.h	2;"	d
+__PROFILE_H__	src/profile.h	2;"	d
+__SIMPLE_CONFIG_H__	src/simple_config.h	2;"	d
+_addr	src/simple_config.h	/^        void        *_addr;$/;"	m	union:__anon4::__anon5
+_array_copy	src/array.c	/^void _array_copy(array_t *dst, array_t *src) {$/;"	f
+_array_delete	src/array.c	/^void _array_delete(array_t *array, int idx) {$/;"	f
+_array_free	src/array.c	/^void _array_free(array_t *array) {$/;"	f
+_array_grow_if_needed	src/array.c	/^void _array_grow_if_needed(array_t *array) {$/;"	f
+_array_grow_if_needed_to	src/array.c	/^void _array_grow_if_needed_to(array_t *array, int new_cap) {$/;"	f
+_array_insert	src/array.c	/^void * _array_insert(array_t *array, int idx, void *elem) {$/;"	f
+_array_make	src/array.c	/^array_t _array_make(int elem_size) {$/;"	f
+_array_make_with_cap	src/array.c	/^array_t _array_make_with_cap(int elem_size, int initial_cap) {$/;"	f
+_array_next_elem	src/array.c	/^void * _array_next_elem(array_t *array) {$/;"	f
+_array_push	src/array.c	/^void * _array_push(array_t *array, void *elem) {$/;"	f
+_array_push_n	src/array.c	/^void * _array_push_n(array_t *array, void *elems, int n) {$/;"	f
+_array_zero_term	src/array.c	/^void _array_zero_term(array_t *array) {$/;"	f
+_data	src/simple_config.h	/^    hash_table_slot_scfg_str_scfg_entry_t * _data;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_delete	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_delete_t const _delete;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_equ	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_equ_t const _equ;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_free	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_free_t const _free;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_get_key	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_get_key_t const _get_key;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_get_val	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_get_val_t const _get_val;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_hash	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_hash_t const _hash;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_hash	src/simple_config.h	/^    uint64_t _hash;$/;"	m	struct:_hash_table_slot_scfg_str_scfg_entry_t
+_hash_table	src/hash_table.h	62;"	d
+_hash_table_scfg_str_scfg_entry_t	src/simple_config.h	/^typedef struct _hash_table_scfg_str_scfg_entry_t {$/;"	s
+_hash_table_slot	src/hash_table.h	60;"	d
+_hash_table_slot_scfg_str_scfg_entry_t	src/simple_config.h	/^typedef struct _hash_table_slot_scfg_str_scfg_entry_t {$/;"	s
+_insert	src/simple_config.h	/^    hash_table_scfg_str_scfg_entry_t_insert_t const _insert;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_key	src/simple_config.h	/^    scfg_str _key;$/;"	m	struct:_hash_table_slot_scfg_str_scfg_entry_t
+_load_thresh	src/simple_config.h	/^    uint64_t len, _size_idx, _load_thresh;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_next	src/simple_config.h	/^    struct _hash_table_slot_scfg_str_scfg_entry_t * _next;$/;"	m	struct:_hash_table_slot_scfg_str_scfg_entry_t	typeref:struct:_hash_table_slot_scfg_str_scfg_entry_t::_hash_table_slot_scfg_str_scfg_entry_t
+_scfg	src/config.h	/^    struct scfg *_scfg;$/;"	m	struct:__anon2	typeref:struct:__anon2::scfg
+_size_idx	src/simple_config.h	/^    uint64_t len, _size_idx, _load_thresh;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+_tree	src/tree.h	64;"	d
+_tree_it	src/tree.h	62;"	d
+_tree_node	src/tree.h	60;"	d
+_val	src/simple_config.h	/^    scfg_entry_t _val;$/;"	m	struct:_hash_table_slot_scfg_str_scfg_entry_t
+accesses	src/profile.c	/^    u64   accesses;$/;"	m	struct:__anon9	file:
+acquire_proccess	src/process.c	/^md_proc *acquire_proccess(pid_t pid) {$/;"	f
+addr	src/profile.c	/^    u64 addr;$/;"	m	struct:__anon8	file:
+addr_t	src/profile.c	/^typedef void *addr_t;$/;"	t	file:
+alive	src/process.h	/^    int             alive;$/;"	m	struct:__anon1
+array_clear	src/array.h	61;"	d
+array_copy	src/array.h	93;"	d
+array_data	src/array.h	86;"	d
+array_delete	src/array.h	55;"	d
+array_free	src/array.h	37;"	d
+array_grow_if_needed	src/array.h	90;"	d
+array_insert	src/array.h	52;"	d
+array_item	src/array.h	64;"	d
+array_last	src/array.h	67;"	d
+array_len	src/array.h	40;"	d
+array_make	src/array.h	31;"	d
+array_make_with_cap	src/array.h	34;"	d
+array_next_elem	src/array.h	43;"	d
+array_pop	src/array.h	58;"	d
+array_push	src/array.h	46;"	d
+array_push_n	src/array.h	49;"	d
+array_rtraverse	src/array.h	81;"	d
+array_t	src/array.h	/^} array_t;$/;"	t	typeref:struct:__anon7
+array_traverse	src/array.h	71;"	d
+array_traverse_from	src/array.h	76;"	d
+array_zero_term	src/array.h	88;"	d
+baddr	src/simple_config.h	/^        int         *baddr;$/;"	m	union:__anon4::__anon5
+bdef	src/simple_config.h	/^        int         bdef;$/;"	m	union:__anon4::__anon6
+capacity	src/array.h	/^    int   capacity;$/;"	m	struct:__anon7
+clear_profiling_info	src/profile.c	/^static void clear_profiling_info(void) {$/;"	f	file:
+collected_profile	src/profile.c	/^static array_t         collected_profile;$/;"	v	file:
+config	src/config.c	/^md_config config;$/;"	v
+cpu_profilers	src/profile.c	/^static md_cpu_profiler cpu_profilers[2048];$/;"	v	file:
+data	src/array.h	/^    void *data;$/;"	m	struct:__anon7
+do_profiling_for_cpu	src/profile.c	/^static void do_profiling_for_cpu(md_cpu_profiler *prof) {$/;"	f	file:
+elem_size	src/array.h	/^    int   elem_size;$/;"	m	struct:__anon7
+err_kind	src/simple_config.h	/^    int           err_kind;$/;"	m	struct:scfg
+err_msg	src/simple_config.h	/^    const char   *err_msg;$/;"	m	struct:scfg
+faddr	src/simple_config.h	/^        float       *faddr;$/;"	m	union:__anon4::__anon5
+fd	src/profile.c	/^    int                          fd;$/;"	m	struct:__anon10	file:
+fdef	src/simple_config.h	/^        float       fdef;$/;"	m	union:__anon4::__anon6
+flags	src/simple_config.h	/^    int flags;$/;"	m	struct:__anon4
+get_or_make_info_for_pid	src/profile.c	/^static md_profile_info *get_or_make_info_for_pid(pid_t pid) {$/;"	f	file:
+hash_table	src/hash_table.h	63;"	d
+hash_table	src/simple_config.h	396;"	d
+hash_table	src/simple_config.h	921;"	d
+hash_table_delete	src/hash_table.h	24;"	d
+hash_table_delete	src/simple_config.h	405;"	d
+hash_table_delete	src/simple_config.h	929;"	d
+hash_table_free	src/hash_table.h	20;"	d
+hash_table_free	src/simple_config.h	401;"	d
+hash_table_free	src/simple_config.h	925;"	d
+hash_table_get_key	src/hash_table.h	21;"	d
+hash_table_get_key	src/simple_config.h	402;"	d
+hash_table_get_key	src/simple_config.h	926;"	d
+hash_table_get_val	src/hash_table.h	22;"	d
+hash_table_get_val	src/simple_config.h	403;"	d
+hash_table_get_val	src/simple_config.h	927;"	d
+hash_table_insert	src/hash_table.h	23;"	d
+hash_table_insert	src/simple_config.h	404;"	d
+hash_table_insert	src/simple_config.h	928;"	d
+hash_table_len	src/hash_table.h	19;"	d
+hash_table_len	src/simple_config.h	400;"	d
+hash_table_len	src/simple_config.h	924;"	d
+hash_table_make	src/hash_table.h	17;"	d
+hash_table_make	src/simple_config.h	398;"	d
+hash_table_make	src/simple_config.h	922;"	d
+hash_table_make_e	src/hash_table.h	18;"	d
+hash_table_make_e	src/simple_config.h	399;"	d
+hash_table_make_e	src/simple_config.h	923;"	d
+hash_table_pretty_name	src/hash_table.h	64;"	d
+hash_table_scfg_str_scfg_entry_t	src/simple_config.h	/^} * hash_table_scfg_str_scfg_entry_t;$/;"	t	typeref:struct:_hash_table_scfg_str_scfg_entry_t
+hash_table_scfg_str_scfg_entry_t_delete	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_delete(hash_table_scfg_str_scfg_entry_t t,$/;"	f
+hash_table_scfg_str_scfg_entry_t_delete_t	src/simple_config.h	/^typedef int (*hash_table_scfg_str_scfg_entry_t_delete_t)($/;"	t
+hash_table_scfg_str_scfg_entry_t_equ_t	src/simple_config.h	/^typedef int (*hash_table_scfg_str_scfg_entry_t_equ_t)(scfg_str, scfg_str);$/;"	t
+hash_table_scfg_str_scfg_entry_t_free	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_free(hash_table_scfg_str_scfg_entry_t t) {$/;"	f
+hash_table_scfg_str_scfg_entry_t_free_t	src/simple_config.h	/^typedef void (*hash_table_scfg_str_scfg_entry_t_free_t)($/;"	t
+hash_table_scfg_str_scfg_entry_t_get_key	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_get_key(hash_table_scfg_str_scfg_entry_t t,$/;"	f
+hash_table_scfg_str_scfg_entry_t_get_key_t	src/simple_config.h	/^typedef scfg_str * (*hash_table_scfg_str_scfg_entry_t_get_key_t)($/;"	t
+hash_table_scfg_str_scfg_entry_t_get_val	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_get_val(hash_table_scfg_str_scfg_entry_t t,$/;"	f
+hash_table_scfg_str_scfg_entry_t_get_val_t	src/simple_config.h	/^typedef scfg_entry_t * (*hash_table_scfg_str_scfg_entry_t_get_val_t)($/;"	t
+hash_table_scfg_str_scfg_entry_t_hash_t	src/simple_config.h	/^typedef uint64_t (*hash_table_scfg_str_scfg_entry_t_hash_t)(scfg_str);$/;"	t
+hash_table_scfg_str_scfg_entry_t_insert	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_insert(hash_table_scfg_str_scfg_entry_t t,$/;"	f
+hash_table_scfg_str_scfg_entry_t_insert_t	src/simple_config.h	/^typedef void (*hash_table_scfg_str_scfg_entry_t_insert_t)($/;"	t
+hash_table_scfg_str_scfg_entry_t_make	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_make($/;"	f
+hash_table_scfg_str_scfg_entry_t_rehash	src/simple_config.h	/^hash_table_scfg_str_scfg_entry_t_rehash(hash_table_scfg_str_scfg_entry_t t) {$/;"	f
+hash_table_scfg_str_scfg_entry_t_rehash_insert	src/simple_config.h	/^static inline void hash_table_scfg_str_scfg_entry_t_rehash_insert($/;"	f
+hash_table_scfg_str_scfg_entry_t_update_load_thresh	src/simple_config.h	/^static inline void hash_table_scfg_str_scfg_entry_t_update_load_thresh($/;"	f
+hash_table_slot	src/hash_table.h	61;"	d
+hash_table_slot_scfg_str_scfg_entry_t	src/simple_config.h	/^} * hash_table_slot_scfg_str_scfg_entry_t;$/;"	t	typeref:struct:_hash_table_slot_scfg_str_scfg_entry_t
+hash_table_slot_scfg_str_scfg_entry_t_make	src/simple_config.h	/^hash_table_slot_scfg_str_scfg_entry_t_make(scfg_str key, scfg_entry_t val,$/;"	f
+hash_table_t	src/simple_config.h	/^typedef hash_table(scfg_str, scfg_entry_t) hash_table_t;$/;"	t
+hash_table_traverse	src/hash_table.h	25;"	d
+hash_table_traverse	src/simple_config.h	406;"	d
+hash_table_traverse	src/simple_config.h	930;"	d
+ht_prime_sizes	src/hash_table.h	/^static uint64_t ht_prime_sizes[] = {$/;"	v
+ht_prime_sizes	src/simple_config.h	/^static uint64_t ht_prime_sizes[] = {$/;"	v
+i16	src/common.h	23;"	d
+i32	src/common.h	24;"	d
+i64	src/common.h	25;"	d
+i8	src/common.h	22;"	d
+iaddr	src/simple_config.h	/^        int         *iaddr;$/;"	m	union:__anon4::__anon5
+idef	src/simple_config.h	/^        int         idef;$/;"	m	union:__anon4::__anon6
+init_config	src/config.c	/^int init_config(int argc, char **argv) {$/;"	f
+init_process_table	src/process.c	/^int init_process_table(void) {$/;"	f
+init_profiling	src/profile.c	/^int init_profiling(void) {$/;"	f
+kind	src/simple_config.h	/^    int kind;$/;"	m	struct:__anon4
+len	src/simple_config.h	/^    uint64_t len, _size_idx, _load_thresh;$/;"	m	struct:_hash_table_scfg_str_scfg_entry_t
+likely	src/common.h	8;"	d
+main	src/mat_daemon.c	/^int main(int argc, char **argv) {$/;"	f
+md_config	src/config.h	/^} md_config;$/;"	t	typeref:struct:__anon2
+md_cpu_profiler	src/profile.c	/^} md_cpu_profiler;$/;"	t	typeref:struct:__anon10	file:
+md_object	src/object.h	/^} md_object;$/;"	t	typeref:struct:__anon3
+md_proc	src/process.h	/^} md_proc;$/;"	t	typeref:struct:__anon1
+md_profile_info	src/profile.c	/^} md_profile_info;$/;"	t	typeref:struct:__anon9	file:
+md_profile_sample	src/profile.c	/^} md_profile_sample;$/;"	t	typeref:struct:__anon8	file:
+measure_time_now_ms	src/common.h	/^u64 measure_time_now_ms(void) {$/;"	f
+metadata	src/profile.c	/^    struct perf_event_mmap_page *metadata;$/;"	m	struct:__anon10	typeref:struct:__anon10::perf_event_mmap_page	file:
+n_cpus	src/profile.c	/^static int             n_cpus;$/;"	v	file:
+next_power_of_2	src/common.h	/^u64 next_power_of_2(u64 x) {$/;"	f
+objmap_path	src/process.h	/^    char            objmap_path[PATH_MAX];$/;"	m	struct:__anon1
+pe	src/profile.c	/^    struct perf_event_attr       pe;$/;"	m	struct:__anon10	typeref:struct:__anon10::perf_event_attr	file:
+pfm	src/profile.c	/^    pfm_perf_encode_arg_t        pfm;$/;"	m	struct:__anon10	file:
+pid	src/process.h	/^    pid_t           pid;$/;"	m	struct:__anon1
+pid	src/profile.c	/^    pid_t pid;$/;"	m	struct:__anon9	file:
+pid	src/profile.c	/^    u32 pid;$/;"	m	struct:__anon8	file:
+pid_hash	src/process.c	/^static u64 pid_hash(pid_t pid) { return (u64)pid; }$/;"	f	file:
+print_config	src/config.c	/^void print_config(void) {$/;"	f
+proc_discovery_period_ms	src/config.h	/^    int         proc_discovery_period_ms;$/;"	m	struct:__anon2
+process_discovery_pthread	src/process.c	/^static pthread_t process_discovery_pthread;$/;"	v	file:
+process_discovery_thread	src/process.c	/^static void *process_discovery_thread(void *arg) {$/;"	f	file:
+process_table_rwlock	src/process.c	/^pthread_rwlock_t           process_table_rwlock = PTHREAD_RWLOCK_INITIALIZER;$/;"	v
+profile_event_string	src/config.h	/^    const char *profile_event_string;$/;"	m	struct:__anon2
+profile_get_event	src/profile.c	/^static int profile_get_event(int cpu, md_cpu_profiler *cpu_profiler) {$/;"	f	file:
+profile_max_history	src/config.h	/^    int         profile_max_history;$/;"	m	struct:__anon2
+profile_max_sample_pages	src/config.h	/^    int         profile_max_sample_pages;$/;"	m	struct:__anon2
+profile_overflow_thresh	src/config.h	/^    int         profile_overflow_thresh;$/;"	m	struct:__anon2
+profile_period_ms	src/config.h	/^    int         profile_period_ms;$/;"	m	struct:__anon2
+profiling_pthread	src/profile.c	/^static pthread_t       profiling_pthread;$/;"	v	file:
+profiling_thread	src/profile.c	/^static void *profiling_thread(void *arg) {$/;"	f	file:
+release_proccess	src/process.c	/^void release_proccess(md_proc *proc) {$/;"	f
+saddr	src/simple_config.h	/^        const char **saddr;$/;"	m	union:__anon4::__anon5
+scfg	src/simple_config.h	/^struct scfg {$/;"	s
+scfg_add_bool	src/simple_config.h	/^void scfg_add_bool(struct scfg *cfg, const char *key, int *addr) {$/;"	f
+scfg_add_entry	src/simple_config.h	/^static void scfg_add_entry(struct scfg *cfg, const char *key, int kind, void *addr) {$/;"	f
+scfg_add_float	src/simple_config.h	/^void scfg_add_float(struct scfg *cfg, const char *key, float *addr) {$/;"	f
+scfg_add_int	src/simple_config.h	/^void scfg_add_int(struct scfg *cfg, const char *key, int *addr) {$/;"	f
+scfg_add_string	src/simple_config.h	/^void scfg_add_string(struct scfg *cfg, const char *key, const char **addr) {$/;"	f
+scfg_apply_default	src/simple_config.h	/^static void scfg_apply_default(struct scfg *cfg, scfg_entry_t *entry) {$/;"	f
+scfg_default_bool	src/simple_config.h	/^void scfg_default_bool(struct scfg *cfg, const char *key, int def) {$/;"	f
+scfg_default_float	src/simple_config.h	/^void scfg_default_float(struct scfg *cfg, const char *key, float def) {$/;"	f
+scfg_default_int	src/simple_config.h	/^void scfg_default_int(struct scfg *cfg, const char *key, int def) {$/;"	f
+scfg_default_string	src/simple_config.h	/^void scfg_default_string(struct scfg *cfg, const char *key, const char *def) {$/;"	f
+scfg_entry_free	src/simple_config.h	/^static void scfg_entry_free(scfg_entry_t *entry) {$/;"	f
+scfg_entry_t	src/simple_config.h	/^} scfg_entry_t;$/;"	t	typeref:struct:__anon4
+scfg_err_msg	src/simple_config.h	/^const char *scfg_err_msg(struct scfg *cfg) {$/;"	f
+scfg_free	src/simple_config.h	/^void scfg_free(struct scfg *cfg) {$/;"	f
+scfg_make	src/simple_config.h	/^struct scfg* scfg_make(void) {$/;"	f
+scfg_parse	src/simple_config.h	/^int scfg_parse(struct scfg *cfg, const char *path) {$/;"	f
+scfg_parse_bool	src/simple_config.h	/^static void scfg_parse_bool(struct scfg *cfg, scfg_entry_t *entry, char *key, const char *path, int line_nr, char *val) {$/;"	f
+scfg_parse_float	src/simple_config.h	/^static void scfg_parse_float(struct scfg *cfg, scfg_entry_t *entry, char *key, const char *path, int line_nr, char *val) {$/;"	f
+scfg_parse_int	src/simple_config.h	/^static void scfg_parse_int(struct scfg *cfg, scfg_entry_t *entry, char *key, const char *path, int line_nr, char *val) {$/;"	f
+scfg_parse_line	src/simple_config.h	/^static void scfg_parse_line(struct scfg *cfg, const char *path, char *line, int line_nr) {$/;"	f
+scfg_require	src/simple_config.h	/^void scfg_require(struct scfg *cfg, const char *key) {$/;"	f
+scfg_str	src/simple_config.h	/^typedef const char *scfg_str;$/;"	t
+scfg_str_equ	src/simple_config.h	/^static int scfg_str_equ(scfg_str a, scfg_str b) { return strcmp(a, b) == 0; }$/;"	f
+scfg_str_hash	src/simple_config.h	/^static uint64_t scfg_str_hash(scfg_str s) {$/;"	f
+scfg_validate_bool	src/simple_config.h	/^void scfg_validate_bool(struct scfg *cfg, const char *key, scfg_validate_bool_fn_t validate) {$/;"	f
+scfg_validate_bool_fn_t	src/simple_config.h	/^typedef int (*scfg_validate_bool_fn_t)  (struct scfg*, int);$/;"	t
+scfg_validate_entry	src/simple_config.h	/^static void scfg_validate_entry(struct scfg *cfg, scfg_entry_t *entry, char *key, const char *path, int line_nr) {$/;"	f
+scfg_validate_float	src/simple_config.h	/^void scfg_validate_float(struct scfg *cfg, const char *key, scfg_validate_float_fn_t validate) {$/;"	f
+scfg_validate_float_fn_t	src/simple_config.h	/^typedef int (*scfg_validate_float_fn_t) (struct scfg*, float);$/;"	t
+scfg_validate_int	src/simple_config.h	/^void scfg_validate_int(struct scfg *cfg, const char *key, scfg_validate_int_fn_t validate) {$/;"	f
+scfg_validate_int_fn_t	src/simple_config.h	/^typedef int (*scfg_validate_int_fn_t)   (struct scfg*, int);$/;"	t
+scfg_validate_set_err	src/simple_config.h	/^void scfg_validate_set_err(struct scfg *cfg, const char *msg) {$/;"	f
+scfg_validate_string	src/simple_config.h	/^void scfg_validate_string(struct scfg *cfg, const char *key, scfg_validate_string_fn_t validate) {$/;"	f
+scfg_validate_string_fn_t	src/simple_config.h	/^typedef int (*scfg_validate_string_fn_t)(struct scfg*, const char*);$/;"	t
+sdef	src/simple_config.h	/^        const char *sdef;$/;"	m	union:__anon4::__anon6
+sh_split	src/simple_config.h	/^static int sh_split(char *s, char **words) {$/;"	f
+should_free	src/array.h	/^    int   should_free;$/;"	m	struct:__anon7
+size	src/profile.c	/^    size_t                       size;$/;"	m	struct:__anon10	file:
+start_process_discovery_thread	src/process.c	/^int start_process_discovery_thread(void) {$/;"	f
+start_profiling_thread	src/profile.c	/^int start_profiling_thread(void) {$/;"	f
+table	src/simple_config.h	/^    hash_table_t  table;$/;"	m	struct:scfg
+tid	src/profile.c	/^    u32 tid;$/;"	m	struct:__anon8	file:
+tier_1_capacity	src/config.h	/^    int         tier_1_capacity;$/;"	m	struct:__anon2
+tier_1_node	src/config.h	/^    int         tier_1_node;$/;"	m	struct:__anon2
+tier_2_capacity	src/config.h	/^    int         tier_2_capacity;$/;"	m	struct:__anon2
+tier_2_node	src/config.h	/^    int         tier_2_node;$/;"	m	struct:__anon2
+tier_3_capacity	src/config.h	/^    int         tier_3_capacity;$/;"	m	struct:__anon2
+tier_3_node	src/config.h	/^    int         tier_3_node;$/;"	m	struct:__anon2
+tree	src/tree.h	65;"	d
+tree_begin	src/tree.h	25;"	d
+tree_delete	src/tree.h	24;"	d
+tree_free	src/tree.h	21;"	d
+tree_geq	src/tree.h	27;"	d
+tree_gtr	src/tree.h	28;"	d
+tree_insert	src/tree.h	23;"	d
+tree_it	src/tree.h	63;"	d
+tree_it_equ	src/tree.h	41;"	d
+tree_it_good	src/tree.h	33;"	d
+tree_it_key	src/tree.h	30;"	d
+tree_it_next	src/tree.h	32;"	d
+tree_it_prev	src/tree.h	34;"	d
+tree_it_val	src/tree.h	31;"	d
+tree_last	src/tree.h	26;"	d
+tree_len	src/tree.h	20;"	d
+tree_lookup	src/tree.h	22;"	d
+tree_make	src/tree.h	18;"	d
+tree_make_c	src/tree.h	19;"	d
+tree_node	src/tree.h	61;"	d
+tree_pretty_name	src/tree.h	66;"	d
+tree_rtraverse	src/tree.h	45;"	d
+tree_traverse	src/tree.h	43;"	d
+u16	src/common.h	18;"	d
+u32	src/common.h	19;"	d
+u64	src/common.h	20;"	d
+u8	src/common.h	17;"	d
+unlikely	src/common.h	9;"	d
+use_hash_table	src/hash_table.h	136;"	d
+use_tree	src/tree.h	85;"	d
+used	src/array.h	/^    int   used;$/;"	m	struct:__anon7
+valid_err_msg	src/simple_config.h	/^    const char   *valid_err_msg;$/;"	m	struct:scfg
+validate	src/simple_config.h	/^    void *validate;$/;"	m	struct:__anon4

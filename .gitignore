@@ -1,0 +1,16 @@
+benchmarks
+compass
+hmalloc
+flang-driver
+flang
+llvm
+openmp
+env/bin
+env/include
+env/lib
+env/libexec
+env/share
+examples/accesses/accesses
+examples/live_largest_sites/live_largest_sites
+mat-daemon/bin
+mat-daemon/obj

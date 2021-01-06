@@ -11,10 +11,11 @@ CAT3	src/tree.h	54;"	d
 CAT4	src/hash_table.h	57;"	d
 CAT4	src/tree.h	57;"	d
 DEFAULT_START_SIZE_IDX	src/hash_table.h	69;"	d
-KEY_ADDR	src/accesses.c	26;"	d	file:
-KEY_BYTES	src/accesses.c	25;"	d	file:
+KEY_ADDR	src/accesses.c	27;"	d	file:
+KEY_BYTES	src/accesses.c	26;"	d	file:
+MAX	src/accesses.c	22;"	d	file:
 MIN	src/accesses.c	21;"	d	file:
-PAGE_SIZE	src/accesses.c	77;"	d	file:
+PAGE_SIZE	src/accesses.c	81;"	d	file:
 PROC_OBJECT_MAP_IMPL	src/accesses.c	18;"	d	file:
 STR	src/hash_table.h	48;"	d
 STR	src/tree.h	48;"	d
@@ -80,11 +81,13 @@ n_coop_buff_bytes	src/accesses.c	/^    u32   n_coop_buff_bytes;$/;"	m	struct:__a
 n_cpus	src/accesses.c	/^int            n_cpus;$/;"	v
 object_t	src/accesses.c	/^} object_t;$/;"	t	typeref:struct:__anon3	file:
 pe	src/accesses.c	/^    struct perf_event_attr       pe;$/;"	m	struct:__anon4	typeref:struct:__anon4::perf_event_attr	file:
+pfm	src/accesses.c	/^    pfm_perf_encode_arg_t        pfm;$/;"	m	struct:__anon4	file:
 pid	src/accesses.c	/^    u32 pid;$/;"	m	struct:__anon5	file:
 pid	src/accesses.c	/^int                             pid;$/;"	v
+profile_event	src/accesses.c	/^const char *profile_event = "MEM_LOAD_UOPS_RETIRED.L3_MISS";$/;"	v
 profile_get_event	src/accesses.c	/^int profile_get_event(int cpu, cpu_profiler_t *cpu_profiler) {$/;"	f
 profile_max_sample_pages	src/accesses.c	/^int         profile_max_sample_pages = 128;$/;"	v
-profile_overflow_thresh	src/accesses.c	/^int         profile_overflow_thresh  = 4;$/;"	v
+profile_overflow_thresh	src/accesses.c	/^int         profile_overflow_thresh  = 16;$/;"	v
 profile_sample_t	src/accesses.c	/^} profile_sample_t;$/;"	t	typeref:struct:__anon5	file:
 report_interval	src/accesses.c	/^void report_interval(int i, u64 elap_ms) {$/;"	f
 rss	src/accesses.c	/^    u64 rss;$/;"	m	struct:__anon2	file:

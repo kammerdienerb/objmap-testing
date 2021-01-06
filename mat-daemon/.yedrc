@@ -1,0 +1,13 @@
+style-term-bg 'elly'
+
+set builder-build-command           './build.sh'
+set use-ctags                       'yes'
+set ctags-flags                     '-R src'
+set ctags-enable-extra-highlighting 'yes'
+
+vimish-bind normal ctrl-t                              \
+    multi                                              \
+        'shell-run sudo bin/mat-daemon'                \
+        'special-buffer-prepare-unfocus *shell-output'
+
+vimish-bind normal meta-t sh-silent 'sudo pkill mat-daemon'
